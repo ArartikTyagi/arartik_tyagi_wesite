@@ -1,129 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arartik Tyagi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            text-align: center;
-            padding-top: 50px;
-        }
-        .input-group {
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-        /* Navbar styling */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em;
-            background-color:#ddc305;
-            color: #fff;
-        }
-        .navbar .logo {
-            font-size: 1.7em;
-        }
-        .navbar .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        .navbar .nav-links li {
-            margin: 0 1em;
-        }
-        .navbar .nav-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .navbar .menu-toggle {
-            display: none;
-            font-size: 1.5em;
-            background: none;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-        }
-        /* Responsive styling for smaller screens */
-        @media (max-width: 768px) {
-            .navbar .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                text-align: center;
-            }
-            .navbar .menu-toggle {
-                display: block;
-            }
-            .navbar .nav-links.active {
-                display: flex;
-            }
-        }
-        /* Footer styling */
-        .footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <title>Personal Portfolio | Arartik Tyagi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">Arartik Tyagi</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="content">
-        <section id="home">
-            <h1>Welcome to My Site</h1>
-            <p>’I am so glad you’re here! Whether it’s for a friendly chat, support, or just to share a moment, know that you’re in a space where you’re valued and appreciated. Let’s make this time meaningful, warm, and full of positive energy. Please feel free to reach out, share your thoughts, or simply relax—you’re always welcome with me.</p>
-        </section>
-        <section id="about">
-            <h2>Hello Everyone,</h2>
-            <p>My name is Arartik Tyagi, and I am currently a student at UPES Dehradun, a renowned institution specializing in petroleum studies. The university holds the prestigious 46th rank in the NIRF rankings.</p>
-            <p>I am pursuing a B.Tech degree in the year 2024, marking my foundation year at UPES. I am excited to be a part of this journey and to contribute to the academic and social environment of the university.</p>
-            <p>I consider myself an open-minded, grateful, and charming individual with a friendly nature. I believe in treating everyone with respect and kindness, and I enjoy building meaningful connections with others—provided they approach with a positive attitude.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer web design, development, video editing, MS-Office, Canva software, and coding with C & HTML languages.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us:</h2>
-            <p>Phone: 6397830069</p>
-            <p>Email: tyagiarartik@gmail.com, ARARTIK.11633@STU.UPES.ac.in</p>
-        </section>
-    </main>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#home" class="logo">Portfolio<span class="animate" style="--i:1;"></span></a>
 
-    <!-- Footer -->
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home show-animate js-container" id="home">
+        <div class="congrats">
+            <div class="checkmark-circle">
+                <div class="background"></div>
+                <div class="checkmark draw"></div>
+            </div>
+            <h1>Félicitations!</h1>
+            <p>Vous avez gagnez!!!</p>
+
+            <button class="submit-btn" id="endanim" type="submit"
+                onclick="alert(Hellow);">Continuer</button>
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Arartik Tyagi<span class="show-animate" style="--i:2;"></span></span></h1>
+            <div class="text-animate">
+                <h3>B.Tech CSE Student</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>
+                I am a B.Tech student at UPES Dehradun, currently in my first year of study (2024). Known for being
+                open-minded, charming, and innovative, I actively contribute as an Events Core Member of the UPES ACM
+                Chapter. I am passionate about coding, teamwork, and creating impactful projects that bring positive
+                change in the tech world.
+                <span class="animate" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box">
+                <a href="ARARTIK_TYAGI_RESUME.pdf" target="_blank" class="btn"> My CV</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://github.com/ArartikTyagi" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/arartik-tyagi-572b83318/" target="_blank"><i
+                    class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/a_t_tyagi_ji/" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </div>
+        <div class="home-imgHover"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-img">
+            <img src="arar.jpg" height="220" alt="ArartikTyagi">
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--i:2;"></span>
+        </div>
+
+            <div class="text-animate">
+                <div class="about-content">
+                <h3>Who Am I?</h3>
+                <p>
+                    I am a curious learner, problem solver, and tech enthusiast with an interest in software development
+                    and web technologies. My ultimate goal is to use technology to address real-world problems and make
+                    life easier for people around me.
+                    <span class="animate scroll" style="--i:4;"></span>
+                </p>
+                <p>
+                    Beyond academics, I enjoy participating in events and hackathons that foster creativity and
+                    collaboration.
+                    <span class="animate scroll" style="--i:4;"></span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Telegram Bots</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                        <a href="https://t.me/UPESBuddy" target="_blank" class="link">UPES Buddy</a>
+                        <a href="https://t.me/UB_llm_bot" target="_blank" class="link">UB LLM Bot</a>
+                        <a href="https://github.com/ArartikTyagi/calmly/blob/main/calmly" target="_blank"
+                            class="link">Calmly Bot</a>
+                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Telegram Bots</h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                <h3 class="title">Website Development</h3>
+                <div class="skills-box">
+                    <div class="project-links">
+                        <a href="https://arartiktyagi.github.io/Dr.Balendu_Website/" target="_blank">Dr. Balendu
+                            Website</a>
+                        <a href="https://arartiktyagi.github.io/VYOM_TRIPATHI/" target="_blank">Vyom Tripathi
+                            Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Get in <span>Touch</span></h2>
+
+        <div class="contact-container">
+            <p>If you'd like to collaborate or learn more about my projects, feel free to reach out:</p>
+            <div class="contact-links">
+                <a href="mailto:arartik.tyagi@gmail.com" class="contact-link"><i class="bx bxl-gmail"></i>Email Me</a>
+                <a href="https://github.com/ArartikTyagi" class="contact-link"><i class="bx bxl-github"></i>My
+                    GitHub</a>
+                <a href="https://www.linkedin.com/in/arartik-tyagi-572b83318/" class="contact-link"><i
+                        class="bx bxl-linkedin"></i>My LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer class="footer">
-        <p>&copy; 2024 Arartik Tyagi. All rights reserved.</p>
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Arartik Tyagi | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
     </footer>
 
-    <!-- JavaScript for menu toggle -->
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
